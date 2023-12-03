@@ -1,0 +1,143 @@
+.faq-container{
+  height: 1000px;
+  position: relative;
+  top: 17vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: black;
+  
+}
+
+.faq-whole{
+  height: 475px;
+  width: 1200px;
+  position: relative;
+  bottom: 7vh;
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+.faq-left{
+   display: flex;
+   flex-direction: column;
+   
+}
+
+.faq-button{
+  color: #8247ff;
+  font-family: Outfit,sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid rgb(218, 217, 217);
+  letter-spacing: 0.96px;
+  background-color: white;
+  border-radius: 8px;
+  line-height: 14.4px;
+  padding: 5px;
+  margin-bottom: 20px;
+  width: 7vh;
+  
+}
+.faq-need{
+        font-family: Outfit,sans-serif;
+        font-size: 56px;
+        font-weight: 500;
+        letter-spacing: -1px;
+        position: relative;
+        line-height: 56px;
+        flex-direction: column;
+        color: #1c1c1c;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+}
+.faq-paragraph{
+  color: #767575;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  word-spacing: 0px;
+  height: 60px;
+  font-family: Inter,sans-serif;
+  line-height: 30px;
+}
+
+
+.faq-item {
+  margin-bottom: 20px;
+  border-radius: 20px;
+  position: relative;
+  left: 5vh;
+  border-radius: 20px;
+  background-color: #f7f8fd;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease-out;
+
+  
+}
+
+.faq-item.clicked {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  grid-template-rows: auto;
+  
+}
+
+.faq-question {
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: Outfit, sans-serif;
+  font-weight: bold;
+  color: #070404;
+  height: 72.4px;
+  padding: 20px 15px 0 30px;
+  border-radius: 20px;
+  width: 720px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  transition: all 0.6s ease;
+  
+}
+
+.faq-question.clicked {
+  color: #8247ff;
+  transform: translateY(10px);
+  
+}
+
+.icon {
+  position: absolute;
+  left: 75vh;
+}
+
+.icon.clicked {
+  position: absolute;
+  left: 75vh;
+}
+
+.faq-answer {
+  font-size: 16px;
+  color: #767575;
+  margin-top: 5px;
+  width: 650px;
+  display: block;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  position: relative;
+  opacity: 0;
+  max-height: 0;
+  padding: 20px 30px;
+  transition: opacity 0.6s ease, max-height 0.6s ease, transform 0.6s ease;
+  transform: translateY(-20px);
+}
+
+.faq-item.clicked .faq-answer {
+  opacity: 1;
+  max-height: 500px;
+  transform: translateY(0);
+}
+

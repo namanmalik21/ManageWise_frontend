@@ -1,0 +1,156 @@
+.testimonials{
+    margin-left: 100px;
+    margin-top: 150px;
+    
+}
+
+.testimonials-container{
+    margin-top: 10vh;
+    width: 1200px;
+    height: 185px;
+    min-width: auto;
+    min-height: auto;
+    margin-left: 35vh;
+    
+
+}
+.t-button,.t-paragraph,.t-heading{
+    margin: 20px 0;
+    text-align: left;
+}
+.t-button{
+    color: #8247ff;
+    font-family: Outfit,sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid rgb(218, 217, 217);
+    letter-spacing: 0.96px;
+    background-color: white;
+    border-radius: 8px;
+    line-height: 14.4px;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 13vh;
+}
+.t-heading{
+    font-family: Outfit,sans-serif;
+        font-size: 56px;
+        font-weight: 500;
+        letter-spacing: -1px;
+        position: relative;
+        line-height: 56px;
+        flex-direction: column;
+        color: #1c1c1c;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+}
+.t-paragraph{
+  color: #767575;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  word-spacing: 0px;
+  height: 60px;
+  font-family: Inter,sans-serif;
+  line-height: 30px;
+}
+.moving-row {
+    display: flex;
+    margin: 40px;
+    
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    
+    overflow: hidden;
+   
+}
+
+.moving-row::before,
+.moving-row::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    height: 100%;
+    z-index: 2;
+    
+}
+
+.moving-row::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 30, 30, 0), white);
+}
+
+.moving-row::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.t-row-container{
+    width: 340px;
+    height: 340px;
+    padding: 50px 40px 40px 40px;
+    border-radius: 30px;
+    border: solid 1px #e5e0e0;
+    
+}
+.t-review{
+    font-family: Inter,sans-serif;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    width: 260px;
+    color: #1c1c1c;
+}
+.t-name{
+    font-family: Inter,sans-serif;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    width: 260px;
+    color: #1c1c1c;
+    position: relative;
+    left: 7vh;
+    bottom: 2vh;
+
+}
+.t-icon{
+    font-family: Inter,sans-serif;
+    line-height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    width: 260px;
+    color: #767575;
+    position: relative;
+    left: 7vh;
+    bottom: 2vh;
+}
+@keyframes moveFromLeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.t-row-container {
+  animation: moveFromLeftToRight 30s linear infinite; 
+  margin-bottom: 20px; 
+}
+
+.profile{
+    width: 70px;
+    margin: 10px;
+    position: relative;
+    right: 2.0vh;
+    top: 5.6vh;
+    
+}

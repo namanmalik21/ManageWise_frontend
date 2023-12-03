@@ -1,0 +1,75 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  
+    height: 6.5vh;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(253, 242, 236);
+    color: #fff;
+    border: 0.5px solid #f1e4e4;
+    
+  }
+  
+  .logo img {
+    width: 19vh; 
+    height: auto;
+    margin-left: 0.5vh;
+  }
+  
+  .nav-links a {
+    margin-right: 9px;
+    text-decoration: none;
+    color: #090909;
+    font-family: 'Inter',interplace, sans-serif;
+    font-weight: 500;
+    margin-left: 5vh;    
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+    position: relative;
+    
+  }
+  .nav-links a:hover {
+
+  color:#8247ff;
+  }
+  
+  .buy-button {
+    padding: 10px 20px;
+    border: 1.5px solid #e6d7d797;
+    border-radius: 10px;
+    background-color: white;
+    color: #1c1c1c;
+    cursor: pointer;
+    transition: border 1s;
+    font-family: Outfit, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 3.5vh;
+    margin-right: 1vh;
+    
+    
+  }
+  
+  .buy-button:hover {
+    border: 1px solid #000;
+  }
+  .separator {
+    position: relative;
+    left: 19px;
+    bottom: 2px;
+    width: 4px;
+    height: 4px;
+    background-color: #c7c1c1;
+    border-radius: 50%; 
+    display: inline-block;
+     
+  }
